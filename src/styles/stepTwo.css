@@ -1,0 +1,99 @@
+.plans {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0 0 25px 0;
+}
+
+.plans>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--Light-gray);
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+    padding: 10px;
+}
+
+.plans>div:hover {
+    border: 1px solid var(--Marine-blue)
+}
+
+.plans>div>i {
+    margin: 0 0 75px 0;
+}
+
+.plans .type {
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.plans .price {
+    color: var(--Cool-gray);
+    font-size: .75rem;
+    font-weight: 550;
+}
+
+/* Toggle */
+.toggleContainer {
+    background-color: var(--Alabaster);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px 0 25px 0;
+    padding: 10px 0;
+}
+
+/* Btns */
+.btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+
+.btns>.nextBtn {
+    margin-top: 0;
+}
+
+
+/* javascript */
+.plans .clicked {
+    background-color: var(--Magnolia);
+    border: 1px solid var(--Marine-blue);
+}
+
+/* Javascript classes */
+.toggleClicked .toggle>div {
+    transform: translateX(24px);
+}
+
+
+/* ******************** */
+/* Media Query */
+@media screen and (min-width:0px) and (max-width:550px) {
+    .plans {
+        flex-direction: column;
+    }
+
+    .plans>div {
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 0px;
+    }
+
+    .plans>div>i {
+        margin: 0 15px 0 10px;
+    }
+
+    .plans .type {
+        font-weight: 500;
+        margin: 0 0 5px 0;
+    }
+}

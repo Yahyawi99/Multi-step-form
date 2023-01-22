@@ -1,0 +1,19 @@
+.toggle {
+    width: 42px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--Marine-blue);
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.toggle>div {
+    width: 14px;
+    height: 14px;
+    background-color: var(--White);
+    border-radius: 50%;
+    transform: translateX(4px);
+    transition: .5s;
+}

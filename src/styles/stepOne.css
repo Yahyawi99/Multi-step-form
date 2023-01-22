@@ -1,0 +1,54 @@
+/* Form */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+}
+
+label {
+    color: var(--Marine-blue);
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    color: var(--Marine-blue);
+    border-radius: 5px;
+    border: 1px solid var(--Light-gray);
+    font-family: inherit;
+    font-weight: 550;
+    outline: none;
+    transition: .25s;
+    padding: 0 0 0 10px;
+}
+
+input::placeholder {
+    color: var(--Cool-gray);
+    opacity: .5;
+    letter-spacing: 1px;
+}
+
+input:focus {
+    border: 1px solid var(--Marine-blue);
+}
+
+.errorMessage {
+    color: var(--Strawberry-red);
+    position: absolute;
+    right: 0;
+    font-size: .8rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: .25s;
+}

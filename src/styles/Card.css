@@ -1,0 +1,194 @@
+.cardContainer {
+    width: 98%;
+    max-width: 850px;
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 125px;
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Nav */
+.nav {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: url(../../public/assets/images/bg-sidebar-desktop.svg) center/cover no-repeat;
+    border-radius: 10px;
+    padding: 50px 20px 250px 20px;
+}
+
+.nav .num {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: var(--Magnolia);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--Magnolia);
+    font-weight: 600;
+}
+
+.nav li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+
+.nav li span p:nth-child(1) {
+    color: var(--Cool-gray);
+    font-size: .7rem;
+    font-weight: 800;
+    margin: 0 0 5px 0;
+}
+
+.nav li span p:nth-child(2) {
+    color: var(--Magnolia);
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* steps */
+.stepContainer {
+    width: 100vw;
+    max-width: 475px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stepContainer>h1 {
+    color: var(--Marine-blue);
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0 0 5px 0;
+}
+
+.stepContainer>p {
+    color: var(--Cool-gray);
+    font-size: .9rem;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+}
+
+.nextBtn {
+    width: fit-content;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    align-self: flex-end;
+    font-size: .9rem;
+    font-weight: 600;
+    font-family: inherit;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .25s;
+    padding: 12px 15px;
+    margin: 15px 0 0 0;
+}
+
+.nextBtn:hover {
+    opacity: .9;
+}
+
+.backBtn {
+    color: var(--Cool-gray);
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-weight: 550;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.backBtn:hover {
+    color: var(--Marine-blue);
+}
+
+#price {
+    color: inherit;
+}
+
+/* ****************************** */
+/* Javascript classes */
+.nav .clicked {
+    background-color: var(--Light-blue);
+    color: var(--Marine-blue);
+    border: 1px solid transparent;
+    transition: .25s;
+}
+
+
+.error>input {
+    border-color: var(--Strawberry-red);
+}
+
+.error>.errorMessage {
+    opacity: 1;
+}
+
+
+/* ******************** */
+/* Media Query */
+@media screen and (max-width:850px) {
+    .cardContainer {
+        width: 100vw;
+        height: 100%;
+        max-width: fit-content;
+        min-height: initial;
+        background-color: transparent;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0px;
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+    /* Nav */
+    .navContainer {
+        width: 105vw;
+        background: url(../../public/assets/images/bg-sidebar-desktop.svg) bottom/cover no-repeat;
+    }
+
+    .nav {
+        width: 100vw;
+        height: 225px;
+        background: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px 0 0 0;
+    }
+
+    .nav li span {
+        display: none;
+    }
+
+    /* steps */
+    .stepContainer {
+        width: 80vw;
+        max-width: initial;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--White);
+        position: relative;
+        margin-top: -125px;
+        padding: 25px;
+        z-index: 10;
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+}

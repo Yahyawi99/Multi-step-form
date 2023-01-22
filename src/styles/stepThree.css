@@ -1,0 +1,56 @@
+.services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    margin: 0 0 25px 0;
+}
+
+
+
+.services>div {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid var(--Light-gray);
+    transition: .25s;
+    padding: 15px;
+}
+
+.services>div:hover {
+    border: 1px solid var(--Marine-blue);
+}
+
+.services>div>p {
+    color: var(--Purplish-blue);
+    font-size: .9rem;
+    font-weight: 500;
+    margin-left: auto;
+}
+
+.services>div>span {
+    text-align: left;
+}
+
+.services>div>span>p:nth-child(1) {
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.services>div>span>p:nth-child(2) {
+    color: var(--Cool-gray);
+    font-size: .8rem;
+}
+
+
+/* Javascript classes */
+.services>.serviceClicked {
+    background-color: var(--Magnolia);
+    border-color: var(--Marine-blue);
+}
+
+.serviceClicked .checkbox {
+    background-color: var(--Purplish-blue);
+    border-color: transparent;
+}
